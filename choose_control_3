@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class choose_control3 {
+public class choose_control_3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		

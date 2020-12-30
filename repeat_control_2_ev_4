@@ -3,13 +3,13 @@
 
 import java.util.Scanner;
 
-public class repeat_control_2_ev_4 {
+public class repeat_control_door2_12 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		int num = 0;
 		int sum = 0;
-		
+
 		if (n < 100) {
 			for (int i = 1; i <= n; i++) {
 				num = scan.nextInt();
@@ -18,7 +18,7 @@ public class repeat_control_2_ev_4 {
 					num++;
 				}
 			}
-			System.out.println((Math.round((float)sum / n * 100) / 100.00));
+			System.out.println((Math.round((float) sum / n * 100) / 100.00));
 		}
 	}
 }

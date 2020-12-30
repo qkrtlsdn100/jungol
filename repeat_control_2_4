@@ -1,0 +1,21 @@
+100 이하의 정수를 입력받아서 입력받은 정수부터 100까지의 합을 출력하는 프로그램을 작성하시오.
+
+import java.util.Scanner;
+
+public class repeat_cotrol_door2_4 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int num = 0;
+		int a = scan.nextInt();
+		while (true) {
+			if (a <= 100) {
+				num += a;
+				a++;
+			}else {
+				break;
+			}
+		}
+		System.out.println(num);
+	}
+}

@@ -1,0 +1,15 @@
+10부터 20까지의 숫자를 차례대로 출력하는 프로그램을 작성하시오.for문을 사용하세요.
+
+import java.util.Scanner;
+
+public class repeat_control_door2_2 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		for (int i = 0; i <= 10; i++) {
+			System.out.println(a);
+			a++;
+		}
+	}
+}

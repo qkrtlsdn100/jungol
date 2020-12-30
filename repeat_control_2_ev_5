@@ -1,0 +1,23 @@
+10개의 정수를 입력받아 3의 배수의 개수와 5의 배수의 개수를 각각 출력하는 프로그램을 작성하시오.
+
+import java.util.Scanner;
+
+public class repeat_control_2_ev_6 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num = 0;
+		int a = 0;
+		int b = 0;
+		
+		for (int i = 1; i <= 10; i++) {
+			num = scan.nextInt();
+			if (num % 2 == 0) {
+				a++;
+			}else {
+				b++;
+			}
+			System.out.println("even : " + a);
+			System.out.println("odd : " + b);
+		}
+	}
+}

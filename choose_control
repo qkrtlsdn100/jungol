@@ -6,15 +6,15 @@ public class choose_control {
   public static void main(String[] args){
     Scanner scan = new Scanner(System.in);
     
-    int a = scan.nextInt;
+    int a = scan.nextInt();
     
     if(a > 0) {
-      System.out.println("a");
+      System.out.println(a);
       System.out.println("plus");
     }
     
     else if(a < 0) {
-      System.out.println("-a");
+      System.out.println(a);
       System.out.println("minus");
     }
   }

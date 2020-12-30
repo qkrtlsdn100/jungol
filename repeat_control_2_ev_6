@@ -1,36 +1,24 @@
-10 이하의 과목수 n이 주어진다.
-
-정수로 주어진 n개 과목의 점수를 입력받아서 실수 평균을 구하여 출력하고 
-
-평균이 80점이상이면 "pass", 80점 미만이면 "fail"이라고 출력하는 프로그램을 작성하시오.
-
-
-평균은 반올림하여 소수 첫째자리까지 출력한다.​
+두 개의 정수를 입력받아 두 정수 사이(두 정수를 포함)에 3의 배수이거나 5의 배수인 수들의 합과 평균을 출력하는 프로그램을 작성하시오.
+(평균은 반올림하여 소수 첫째자리까지 출력한다.)
 
 
 import java.util.Scanner;
 
-public class repeat_control_2_ev_6 {
+public class repeat_control_door2_14 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-		int num = 0;
-		int sum = 0;
 
-		if (n < 100) {
-			for (int i = 1; i <= n; i++) {
-				num = scan.nextInt();
-				sum += num;
-				if (num <= 3) {
-					num++;
-				}
-			}
-			System.out.println((Math.round((float) sum / n * 100) / 100.00));
-			if (sum >= 80) {
-				System.out.println("pass");
-			} else if (sum < 80) {
-				System.out.println("fail");
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int num = a < b ? a : b;
+		int sum = 0;
+		
+		for (int i = a; i <= b; i++) {
+			if (i % 3 == 0 || i % 5 == 0) {
+				sum += i;
 			}
 		}
+		System.out.println("sum : " + sum);
+		System.out.println("avg : " + (Math.round((float)sum / 3 * 10)/ 10.0));
 	}
 }

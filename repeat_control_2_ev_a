@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class repeat_control_door2_18 {
+public class repeat_control_2_ev_a {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);

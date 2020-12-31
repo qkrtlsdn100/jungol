@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class repeat_control_door3_9 {
+public class repeat_control_3_ev_2 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 

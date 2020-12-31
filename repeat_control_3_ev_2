@@ -14,12 +14,11 @@ public class repeat_control_3_ev_2 {
 			while (true) {
 				if (n * num % 11 == 0) {
 					break;
+				} else if (n * num % 11 != 0) {
+					System.out.print(n * num + " ");
+					num++;
 				}
-					else if (n * num % 11 != 0) {
-						System.out.print(n * num + " ");
-						num++;
-				}
-			}	
+			}
 		}
 	}
 }

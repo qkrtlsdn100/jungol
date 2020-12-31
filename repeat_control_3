@@ -1,0 +1,28 @@
+자연수 n을 입력받고 1부터 홀수를 차례대로 더해나가면서 합이 n 이상이면 그 때까지 더해진 홀수의 개수와 그 합을 출력하는 프로그램을 작성하시오.
+
+
+import java.util.Scanner;
+
+public class repeat_control_3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+		int num = 0;
+		int sum = 0;
+		int a = 1;
+		while (true) {
+			if (a % 2 == 1) {
+				sum = sum + a;
+				++num;
+			}
+			if (sum >= 100) {
+				break;
+			}
+			a++;
+
+		}
+		System.out.print(num + "  ");
+		System.out.println(sum);
+	}
+}

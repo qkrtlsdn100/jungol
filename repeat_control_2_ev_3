@@ -2,6 +2,12 @@
 
 입력되는 정수는 50이하이다.
 
+입력 예)
+20
+
+출력 예)
+50
+
 import java.util.Scanner;
 
 public class repeat_control_2_ev_3 {
